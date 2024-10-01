@@ -1,2 +1,2 @@
 #!/bin/bash
-chmod --form=guillane betty hello
+chown --form=guillane betty hello
