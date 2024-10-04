@@ -1,2 +1,3 @@
 #!/bin/bash
-grep "root" /etc/passwd
+echo $(find . -type d \( ! -name "." ! -name ".." \) | wc -l)
+
