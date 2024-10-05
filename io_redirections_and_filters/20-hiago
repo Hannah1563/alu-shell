@@ -1,2 +1,2 @@
 #!/bin/bash
-echo "Without C, you would live in hiago" | ./remove_c.sh
+echo "Without C, you would live in hiago" |./remove_c.sh
