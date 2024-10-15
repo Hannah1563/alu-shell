@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+# This script prints 'Best School' 10 times,
+# and for the 9th iteration, it also prints 'Hi'.
+
+count=1
+
+while [ $count -le 10 ]
+do
+    if [ $count -eq 9 ]; then
+        echo "Best School"
+        echo "Hi"  # Print Hi on a new line
+    else
+        echo "Best School"
+    fi
+    ((count++))  # Increment the counter
+done
