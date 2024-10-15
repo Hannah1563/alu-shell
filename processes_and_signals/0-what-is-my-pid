@@ -1,5 +1,4 @@
 #!/usr/bin/env bash
-# This script outputs its own process ID (PID).
+# This script displays its own PID.
 
-echo "My PID is $$"
-
+echo "The PID of this script is $$"
