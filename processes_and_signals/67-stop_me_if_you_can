@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+# This script stops the 7-highlander process.
+
+# Using pkill to stop the process
+if pkill -f "7-highlander"; then
+    echo "Stopped the 7-highlander process."
+else
+    echo "No process found for 7-highlander."
+fi
