@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+# This script extracts visitor IPs and HTTP status codes from an Apache access log.
+
+# Check if the log file is provided as an argument
+if [ $# -ne 1 ]; then
+    echo "Usage: $0 <path_to_apache_access.log>"
+    exit 1
+fi
+
+# Use awk to print the IP and HTTP status code
+awk '{print $1, $9}' "$1"
