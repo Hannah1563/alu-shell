@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# This script displays numbers from 1 to 20 with specific messages for certain numbers.
+# This script displays numbers and superstitions
 
 count=1
 
