@@ -1,0 +1,2 @@
+#!/bin/bash
+ps -e --forest -o pid,ppid,tty,cmd
