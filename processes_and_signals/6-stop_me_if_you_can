@@ -9,9 +9,9 @@ if [ -z "$pid" ]; then
     exit 1
 fi
 
-# Send the SIGTERM signal to the process
-# Instead of kill, use the command that triggers the trap in the target script
-kill -SIGTERM "$pid"
+# Instead of using wait directly, you might not need it unless you're spawning a new process
+# To stop the process, you can send a termination signal
+kill -SIGTERM "$pid" 2>/dev/null
 
-# Optionally, wait for the process to terminate
-wait "$pid" 2>/dev/null
+# Optionally, print a confirmation
+echo "Stopped process with PID: $pid"
