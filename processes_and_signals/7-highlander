@@ -1,9 +1,5 @@
-#!/usr/bin/env bash
-# This script displays "To infinity and beyond" indefinitely.
-
-trap 'echo "Killed"; exit' SIGTERM
-
+#!/bin/bash
 while true; do
     echo "To infinity and beyond"
-    sleep 2
+    sleep 1
 done
