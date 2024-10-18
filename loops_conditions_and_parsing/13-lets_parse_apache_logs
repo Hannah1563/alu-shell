@@ -1,25 +1,4 @@
 #!/usr/bin/env bash
-# This script extracts visitor IPs and HTTP status codes from an Apache access log.
+# displays the visitor IP with the HTTP status code from Apache log file.
 
-# Check if the log file is provided as an argument
-if [ $# -ne 1 ]; then
-    echo "Usage: $0 <path_to_apache_access.log>"
-    exit 1
-fi
-
-log_file="$1"
-
-# Check if the file exists
-if [ ! -f "$log_file" ]; then
-    echo "The file $log_file does not exist."
-    exit 1
-fi
-
-# Check if the file is empty
-if [ ! -s "$log_file" ]; then
-    echo "The file $log_file is empty."
-    exit 1
-fi
-
-# Use awk to print the IP and HTTP status code
-awk '{print $1, $9}' "$log_file"
+awk '{print $1 " " $9}' <apache-access.log
